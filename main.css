@@ -1,0 +1,336 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    color: green;
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+span {
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+header {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    position: relative;
+    border-top: 4px solid green;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+
+.nav {
+    height: auto;
+    display: contents;
+    position: absolute;
+    text-align: center;
+}
+
+.nav li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav a {
+    padding: 0;
+    margin: 0px 0px;
+    color: green;
+    font-size: 14px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background: white;
+    color: grey;
+}
+
+.nav li {
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: block;
+    position: absolute;
+    background: white;
+    text-align: left;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.intro {
+    padding: 20px;
+    margin: 40px 80px;
+    background: white;
+    text-align: center;
+}
+
+.intro p {
+    padding: 0px 100px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+p {
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 80px;
+}
+
+#img {
+    width: auto;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale();
+}
+
+#text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+#text p {
+    text-align: left;
+    margin: 0;
+
+}
+
+.form-wrapper {
+    background: white;
+    margin: 40px 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.contact form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contact form p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact-p {
+    margin: 0;
+}
+
+
+.submit-btn {
+    grid-column: 2/3;
+}
+
+
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    height: 30px;
+    border: 2px solid darkgreen;
+}
+
+.contact form textarea  {
+    resize: none;
+    height: 100px;
+}
+
+.contact form button {
+    width: 100%;
+    background: darkgreen;
+    border: 0;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+.contact form button:hover,
+.contact form button:focus {
+    background: lightgreen;
+    color: #000;
+    outline: 0;
+    transition: background-color 1s ease-out;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav {
+        width: 100%;
+        clear: both;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background: white;
+        clip-path: circle(0px at top right);
+        /*é possível aplicar top ou right também*/
+        transition: clip-path ease-in-out 800ms;
+    }
+
+    /* o clip path faz a animação - não alterar isto novamente*/
+    .nav-open {
+        clip-path: circle(250% at top right);
+        display: block;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    .nav li {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+    }
+
+    .nav a {
+        color: green;
+        font-size: 14px;
+        display: block;
+        margin: 0 0;
+        padding: 12px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        background: green;
+        color: white;
+    }
+
+    .categories a {
+        background: white;
+        color: darkseagreen;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        padding: 16px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .hamburger {
+        margin-top: 12px;
+    }
+
+    .sub-menu {
+        display: block;
+        position: relative;
+    }
+
+    .sub-menu li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: no-close-quote;
+        display: block;
+        background: green;
+        height: 3px;
+        width: 25px;
+        transition: all ease-in-out 600ms;
+    }
+
+    /* HAMBURGER CODE - agradecimentos ao stack overflow*/
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+    .open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .open .hamburger::before {
+        opacity: 0;
+    }
+
+    .open .hamburger::after {
+        transform: translateY(-3px) rotate(-90deg);
+    }
+
+    .block {
+        flex-direction: column;
+    }
+
+    #img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact form {
+        display: block;
+    }
+    
+    .contact form textarea   {
+    resize: none;
+    height: 8em;
+    margin-bottom: 20px;
+}
+
+}
