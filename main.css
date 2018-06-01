@@ -27,6 +27,11 @@ span {
     position: absolute;
 }
 
+
+.logo, span a {
+    color: green;
+}
+
 /* PARTE NÃO RESPONSIVA */
 
 .container {
