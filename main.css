@@ -26,6 +26,7 @@ span {
     position: absolute;
 }
 
+/* PARTE NÃO RESPONSIVA */
 
 .container {
     width: 100%;
@@ -229,6 +230,8 @@ h3{text-align: center;
 margin-bottom: 0;
 }
 
+
+/* PARTE RESPONSIVA */
 
 @media screen and (max-width: 800px) {
   .nav {
