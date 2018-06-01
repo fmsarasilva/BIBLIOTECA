@@ -220,15 +220,32 @@ padding: 20px;}
     font: helvetica;
     font-family: sans-serif;}
 
-.imagem {width: 70%;
+.imagemipca {width: 70%;
+    margin-top: 0px;
+    margin-left: -30px;
 }
 
-.mapa {margin-top: 70px;}
+.mapa {margin-top: 10px;
+width: 90%}
 
 h3{text-align: center;
     background-color: beige,
 margin-bottom: 0;
+    font-size: 15px;
 }
+
+
+p{
+    
+    line-height: 2px;
+}
+
+h2{
+    
+    line-height: 50px;
+    margin-left: 21px;
+}
+
 
 
 /* PARTE RESPONSIVA */
