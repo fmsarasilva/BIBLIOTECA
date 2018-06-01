@@ -453,3 +453,43 @@ h2{
 
 /*__________HOME sobre, base dados, requesitar*/
 
+/*________Acesso Livre*/
+#acesso_titulo{
+    grid-column-start:1; 
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 25px;
+}
+
+.acesso_main{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-items: center;
+}
+.acesso{
+    width: 270px;
+    text-align: center;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.titulos{
+    border: 3px solid #08654b;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .acesso_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*________FIM Acesso Livre*/
+
