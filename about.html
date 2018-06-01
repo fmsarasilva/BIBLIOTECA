@@ -14,11 +14,11 @@
             <h1 class="logo">IPCA<span>Biblioteca</span></h1>
 
             <nav class="nav">
-                <ul id="dropdown" class="drop-web">
-                    <li class="about">
+                <ul id="dropdown" class="menu">
+                    <li>
                         <a href="#">Sobre</a>
                         <ul class="sub-menu1 sub-menu">
-                            <li class="categories"><a href="#">Biblioteca</a></li>
+                            <li class="categories"><a href="about.html">Biblioteca</a></li>
                             <li class="categories"><a href="#">Fundo Documental</a></li>
                             <li class="categories"><a href="#">Equipa e Horário</a></li>
                         </ul>
@@ -41,30 +41,32 @@
                     </li>
                 </ul>
             </nav>
+            <div class="responsive">
             <div class="menu-toggle">
                 <div class="hamburger"></div>
             </div>
+            </div>
         </div>
     </header>
-    <div class="intro">
+    <div class="block">
         <h2>Missão</h2>
-        <p>A Biblioteca do IPCA é um serviço essencial de apoio e fomento ao estudo, à docência e à investigação da comunidade académica.<br/><br/> Procura onservar, difundir os recursos bibliográficos, documentais e informativos nas diversas áreas do saber ministradas pelas Escolas do IPCA (ESG, ESD e EST).<br/><br/> Assim, proporciona formas de acesso personalizado ao utilizador de acordo com as suas necessidades informativas.</p>
+        <p>A Biblioteca do IPCA é um serviço essencial de apoio e fomento ao estudo, à docência e à investigação da comunidade académica. Procura conservar, difundir os recursos bibliográficos, documentais e informativos nas diversas áreas do saber ministradas pelas Escolas do IPCA (ESG, ESD e EST).<br/><br/> Assim, proporciona formas de acesso personalizado ao utilizador de acordo com as suas necessidades informativas.</p>
     </div>
     <div class="block">
-        <img id="img" src="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2017/12/20170509_Eng_Library_DJA_012_3.jpg?itok=-WaXTWX8" />
-        <div id="text">
+        <img src="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2017/12/20170509_Eng_Library_DJA_012_3.jpg?itok=-WaXTWX8" />
             <h2>Competências</h2>
-            <p>> Desenvolver e manter actualizadas e acessíveis bases de dados locais, onde conste toda a documentação existente para consulta na Biblioteca;<br> > Facultar a todos os utilizadores, efectivos e potenciais, a utilização de todos os seus recursos de informação;
-                <br> > Cooperar com outras bibliotecas, de modo a partilhar os respectivos recursos de informação;
-                <br> > Promover acções de formação e de âmbito cultural.</p>
+            <p class="skill">> Desenvolver e manter actualizadas e acessíveis bases de dados locais, onde conste toda a documentação existente para consulta na Biblioteca;<br/><br/>> Facultar a todos os utilizadores, efectivos e potenciais, a utilização de todos os seus recursos de informação;
+               <br/><br/> > Cooperar com outras bibliotecas, de modo a partilhar os respectivos recursos de informação;
+                <br/><br/> > Promover acções de formação e de âmbito cultural.</p>
+                <br/><br/>
+                <div class="buttons"><button class="green-button">Teste</button><button class="green-button">Teste</button></div> 
+                
         </div>
-    </div>
 
-    <div class="form-wrapper">
-        <div class="contact">
-            <h2>Sugestões e Reclamações</h2>
-            <p class="contact-p">A sua opinião é importante para nós. Contribuirá para melhorar a qualidade do serviço prestado. Utilize esta ferramenta caso pretenda deixar uma sugestão, reclamação, expor uma ideia e/ou iniciativas que gostaria de ver concretizadas. A Biblioteca aceita sugestões para a aquisição de publicações. Essas sugestões serão analisadas, tendo em conta o respetivo interesse científico e das disciplinas lecionadas no IPCA.
-                <br/><br/> Obrigado pelo contributo.</p> <br/><br/>
+    <div class="block">
+            <div class="contact"><h2>Sugestões e Reclamações</h2>
+            <p><i>A sua opinião é importante para nós.</i><br/><br/> Contribuirá para melhorar a qualidade do serviço prestado. Utilize esta ferramenta caso pretenda deixar uma sugestão, reclamação, expor uma ideia e/ou iniciativas que gostaria de ver concretizadas.<br/><br/> A Biblioteca aceita sugestões para a aquisição de publicações. Essas sugestões serão analisadas, tendo em conta o respetivo interesse científico e das disciplinas lecionadas no IPCA.
+                <br/><br/> Obrigado pelo contributo.</p> <br/><br/></div>
             <form>
                 <p>
                     <label>Nome</label>
@@ -75,11 +77,6 @@
                     <input type="email" name="email" class="left">
                 </p>
                 <p>
-                    <label>Assunto</label>
-                    <input type="text" name="subject" class="left">
-                </p>
-                <br/>
-                <p>
                     <label>Mensagem</label>
                     <textarea></textarea>
                 </p>
@@ -89,7 +86,6 @@
                 </p>
             </form>
         </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
