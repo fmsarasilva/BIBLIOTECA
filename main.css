@@ -14,6 +14,26 @@ html {
     color: green;
 }
 
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: darkgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgreen;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+/* LOGO */
+
 .logo {
     float: left;
     font-size: 20px;
@@ -27,126 +47,12 @@ span {
     position: absolute;
 }
 
-
-.logo, span a {
+.logo,
+span a {
     color: green;
 }
 
-/* PARTE NÃO RESPONSIVA */
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-header {
-    position: absolute;
-    background: white;
-    padding: 20px;
-    position: relative;
-    border-top: 4px solid darkgreen;
-    text-align: center;
-}
-
-
-.nav li {
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 40px;
-}
-
-.nav a {
-    position: relative;
-    color: green;
-    font-size: 14px;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav a:hover,
-.nav a:focus {
-    background: white;
-    color: grey;
-}
-
-
-.sub-menu {
-    right: -10%;
-    left: -10%;
-    display: block;
-    position: absolute;
-    background: white;
-    box-shadow: 0 5px 5px -5px lightgrey;
-    padding: 0;
-    margin-top: 20px;
-}
-
-
-.sub-menu li {
-    display: block;
-    padding: 20px;
-    text-align: center;
-}
-
-/* MENU TERMINA AQUI */
-
-/* HOMEPAGE */
-
-.imagem {
-    width: 100%;
-    height: 400px;
-    background-image: url(img/bookcase_quote.jpg);
-    color: #fff;
-    background-size: cover;
-    margin-top: 20px;
-}
-
-#quote {
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 10%;
-}
-
-
-.minimenu {
-    width: auto;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    margin: 40px;
-}
-
-.mini{
-    background-color: none;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-.mini p{
-    color: white;
-    background-color: #08654b;
-    padding: 20px 10px ;
-    margin: 10px 20px;
-    }
-
-
-/* ABOUT */
-
-.block {
-    overflow: hidden;
-    padding: 20px;
-    margin: 40px;
-    background: white;
-    text-align: center;
-}
+/* TEXT STYLES */
 
 h2 {
     text-align: left;
@@ -156,22 +62,136 @@ h2 {
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     color: grey;
     font-size: 12px;
     font-weight: 300;
 }
 
-.skill {
-    width: 45%;
-    float: left;
-    text-align: left;
+/* ---- DESKTOP ---- */
 
+header {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-top: 4px solid green;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+}
+
+.nav li {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 14px;
+}
+
+.nav a {
+    text-decoration: none;
+    position: relative;
+    color: green;
+    display: block;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background: white;
+    color: grey;
+}
+
+.sub-menu {
+    right: -10%;
+    left: -10%;
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 5px 5px -5px lightgrey;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* -- HOMEPAGE -- */
+
+.parallax {
+    background-image: url("img/bookcase_quote.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.minimenu {
+    max-width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 60px;
+}
+
+.mini {
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+}
+
+.mini a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mini p {
+    color: white;
+    background-color: darkgreen;
+    padding: 20px 10px;
+    margin: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.mini img {
+    max-width: 50%;
+}
+
+/* -- ABOUT -- */
+
+.block {
+    overflow: hidden;
+    padding: 40px;
+    margin: 60px;
+    background: white;
+}
+
+.mission {
+    background: linear-gradient(to right, white 55%, darkgreen 50%);
+}
+
+.mission p {
+    width: 50%;
+}
+
+.skill {
+    width: 50%;
 }
 
 .block img {
     float: right;
-    width: 50%;
+    max-width: 45%;
     height: auto;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
@@ -179,36 +199,40 @@ p {
 }
 
 .buttons {
+    width: 50%;
     display: inline-block;
+    text-align: center;
 }
 
 .green-button {
+    cursor: pointer;
     border: 0;
     margin: 20px;
     height: 40px;
-    width: 100px;
+    width: 40%;
     background: darkgreen;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .green-button:hover {
-    background: white;
+    background: lightgrey;
     color: darkgreen;
     transition: background-color 1s ease-out;
 }
 
+/*  CONTACT FORM */
+
 .contact {
-    width: 45%;
+    width: 50%;
     margin-right: 20px;
     float: left;
 }
 
 .block form {
-    width: 50%;
+    width: 45%;
     float: right;
-    margin-bottom: 10px;
 }
 
 .block form p {
@@ -220,20 +244,19 @@ label {
     display: inline-block;
     margin: 10px 0px;
     color: darkgreen;
-
 }
 
-.submit-btn {
-    grid-column: 1/3;
+.submit-btn,
+.block form button {
+    cursor: pointer;
 }
 
 .block form button,
 .block form input,
 .block form textarea {
-    padding: 10px;
     width: 100%;
     height: 30px;
-    border: 1px solid darkgrey;
+    border: 1px solid darkgray;
 }
 
 .block form textarea {
@@ -242,61 +265,59 @@ label {
 }
 
 .block form button {
-    border: 1px solid darkgrey;
+    border: 1px solid darkgray;
     background: white;
-    font-weight: 300;
-    color: grey;
+    color: darkgreen;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
 }
 
-
 .block form button:hover,
 .block form button:focus {
     background: darkgreen;
+    border: 0;
     color: white;
     transition: background-color 1s ease-out;
 }
 
-/* ABOUT TERMINA AQUI */
+/* END OF ABOUT PAGE */
 
-/* PÁGINA ACESSO */
+/* -- FREE/OPEN ACCESS PAGE -- */
 
-#acesso_titulo {
+.acesso_main h2 {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    font-size: 25px;
+    margin-bottom: 40px;
 }
 
 .acesso_main {
-    margin: 40px;
+    margin: 60px;
     padding: 20px;
-    background-color: white;
+    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    justify-items: center;
 }
 
-.acesso {
-    width: 300px;
+.acesso p {
     text-align: center;
-    font-size: 14px;
     color: darkgray;
 }
 
+.acesso_main a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .titulos {
-    border: 3px solid #08654b;
+    border: 3px solid green;
     padding: 10px;
     text-align: center;
 }
 
-
-
-
-/* FOOTER */
+/* -- FOOTER -- */
 
 footer {
     background: white;
@@ -306,6 +327,14 @@ footer {
     padding: 40px 40px 10px 40px;
 }
 
+footer img {
+    width: 50%;
+}
+
+.mapa {
+    width: 100%;
+}
+
 .conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -313,17 +342,11 @@ footer {
 
 .box {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .conteudo h2,
-p {
+.conteudo p {
     text-align: center;
-}
-
-.imagemipca {
-    width: 40%;
-
 }
 
 .box div {
@@ -333,14 +356,18 @@ p {
 h3 {
     text-align: center;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-/* FOOTER TERMINA AQUI */
+/* -- END OF FOOTER -- */
 
-/* PARTE RESPONSIVA */
 
-@media screen and (max-width: 800px) {
+
+/* ---- RESPONSIVE ---- */
+
+@media screen and (max-width: 992px) {
+    
+    /* MENU */
     .nav {
         clear: both;
         position: absolute;
@@ -412,7 +439,6 @@ h3 {
         text-align: center;
     }
 
-
     .hamburger,
     .hamburger::before,
     .hamburger::after {
@@ -424,7 +450,6 @@ h3 {
         transition: all ease-in-out 600ms;
     }
 
-    /* HAMBURGER CODE - agradecimentos ao stack overflow*/
     .hamburger::before {
         transform: translateY(-6px);
     }
@@ -444,20 +469,26 @@ h3 {
     .open .hamburger::after {
         transform: translateY(-3px) rotate(-90deg);
     }
-
+    
+    /* MENU ENDS HERE */
 
     .block {
         flex-direction: column;
     }
 
     .block img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         margin-bottom: 20px;
     }
 
     .skill {
         margin: 0;
+        width: 100%;
+    }
+    
+    .buttons {
+        margin-top: 20px;
         width: 100%;
     }
 
@@ -470,6 +501,14 @@ h3 {
         width: 100%;
         float: none;
     }
+    
+     .mission {
+        background: white;
+    }
+
+    .mission p {
+        width: 100%;
+    }
 
     h2,
     p,
@@ -477,50 +516,57 @@ h3 {
         text-align: center;
     }
 
-    .conteudo {
-        grid-template-columns: 1fr;
+    /* -- RESPONSIVE HOMEPAGE MENU --*/
+    .minimenu {
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
     }
-
-
-    @media screen and (max-width: 480px) {
-        .minimenu {
-            flex-direction: column;
-            text-align: center;
-            align-content: center;
-        }
-    }
-
 
     .mini {
         background-color: white;
-        width: 300px;
-        margin: 20px;
-        padding: 20px;
-        text-align: center;
-        color: white;
+        max-width: 100%;
+        padding: 10px;
     }
 
-    @media screen and (max-width: 480px) {
-        .mini {
-            margin: 6px auto;
-        }
+    .mini {
+        margin: 6px auto;
     }
 
-    .mini p {
-        background-color: #08654b;
-        padding: 20px 10px;
-        margin: 10px 20px;
+    .mini img {
+        max-width: 60%;
+        margin-bottom: 20px;
     }
 
-
-    /*responsivo acesso*/
+    /* -- RESPONSIVE OPEN/FREE ACCESS -- */
     .acesso_main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 40px;
     }
 
+    .acesso {
+        width: 100%;
+    }
+
+    
+    /* -- RESPONSIVE FOOTER -- */
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    footer img {
+        width: 30%;
+    }
+    
+    .mapa {
+        width: 60%;
+    }
 }
 
-/* parte responsiva termina aqui */
+
+/* THE END! 
+CODED BY ÂNGELA, GASPAR AND SARA 
+SPECIAL THANKS TO STACKOVERFLOW*/
 
