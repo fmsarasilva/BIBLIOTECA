@@ -317,6 +317,11 @@ label {
     text-align: center;
 }
 
+.titulos:hover {
+    background: green;
+    color: white;
+}
+
 /* -- FOOTER -- */
 
 footer {
