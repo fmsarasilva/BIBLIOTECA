@@ -154,6 +154,12 @@ header {
     cursor: pointer;
 }
 
+.mini p:hover {
+    background: darkgray;
+    color: white;
+}
+
+
 .mini p {
     color: white;
     background-color: darkgreen;
@@ -217,8 +223,8 @@ header {
 }
 
 .green-button:hover {
-    background: lightgrey;
-    color: darkgreen;
+    background: darkgray;
+    color: white;
     transition: background-color 1s ease-out;
 }
 
@@ -366,12 +372,10 @@ h3 {
 
 /* -- END OF FOOTER -- */
 
-
-
 /* ---- RESPONSIVE ---- */
 
 @media screen and (max-width: 992px) {
-    
+
     /* MENU */
     .nav {
         clear: both;
@@ -474,9 +478,8 @@ h3 {
     .open .hamburger::after {
         transform: translateY(-3px) rotate(-90deg);
     }
-    
-    /* MENU ENDS HERE */
 
+    /* MENU ENDS HERE */
     .block {
         flex-direction: column;
     }
@@ -491,7 +494,7 @@ h3 {
         margin: 0;
         width: 100%;
     }
-    
+
     .buttons {
         margin-top: 20px;
         width: 100%;
@@ -506,8 +509,8 @@ h3 {
         width: 100%;
         float: none;
     }
-    
-     .mission {
+
+    .mission {
         background: white;
     }
 
@@ -555,7 +558,7 @@ h3 {
         width: 100%;
     }
 
-    
+
     /* -- RESPONSIVE FOOTER -- */
     .conteudo {
         grid-template-columns: 1fr;
@@ -564,7 +567,7 @@ h3 {
     footer img {
         width: 30%;
     }
-    
+
     .mapa {
         width: 60%;
     }
@@ -574,4 +577,3 @@ h3 {
 /* THE END! 
 CODED BY ÂNGELA, GASPAR AND SARA 
 SPECIAL THANKS TO STACKOVERFLOW*/
-
